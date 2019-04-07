@@ -1,0 +1,14 @@
+{
+    "name": "Booklog Table",
+    "description": "Booklog Tool",
+    "version": "1.0.1",
+    "manifest_version": 2,
+    "content_scripts": [{
+        "matches": ["https://booklog.jp/users/narazaka*"],
+        "js": ["content.js"]
+    }],
+    "permissions": [
+        "cookies",
+        "https://booklog.jp/*"
+    ]
+}
